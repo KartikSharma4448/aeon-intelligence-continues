@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="Explore AEON: a vision for persistent intelligence, lifelong memory, and a continuous identity across devices.">
+  <title>AEON | Intelligence That Continues</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23111214'/%3E%3Cpath d='M7 25 16 6 25 25M11 18h10' fill='none' stroke='%23f1f2f3' stroke-width='3'/%3E%3Ccircle cx='25' cy='7' r='3' fill='%23e64a38'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <a class="logo" href="#" aria-label="AEON home">aeon<span class="logo-dot"></span></a>
+  <nav id="navigation" aria-label="Main navigation">
+    <a href="#vision">The vision</a><a href="#memory">Memory</a><a href="#continuity">Continuity</a><a href="#questions">Perspectives</a>
+  </nav>
+  <button class="button button-small access-trigger">Explore access <span class="button-plus" aria-hidden="true">+</span></button>
+  <button class="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-image" src="assets/aeon-core.png" alt="Conceptual AEON sculpture: interwoven silver fibers connected by red memory paths" fetchpriority="high" width="1536" height="1024">
+    <div class="hero-content">
+      <p class="eyebrow light"><span class="red-mark"></span> ATLAS CONTINUUM / COGNITIVE SUBSTRATE</p>
+      <h1 id="hero-title">AEON</h1>
+      <p class="hero-statement">Intelligence.<br>With continuity.</p>
+      <p class="hero-copy">A vision for intelligence that carries its memory forward. Across moments, across machines, and alongside you.</p>
+      <div class="hero-actions"><button class="button button-red access-trigger">Explore AEON</button><a class="text-link light" href="#vision">Discover the vision <span class="small-plus" aria-hidden="true">+</span></a></div>
+    </div>
+    <div class="hero-footer"><span>01 / A CONTINUOUS IDENTITY</span><span class="hero-caption">CONCEPT STUDY <span class="red-mark"></span> V0.7</span><a href="#vision" aria-label="Scroll to the vision" class="scroll-link">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+  </section>
+  <div class="principles principles-marquee" aria-label="Core principles">
+    <div class="principles-track">
+      <div class="principles-group">
+        <span>Persistent by design</span><span>Memory with meaning</span><span>Adaptive to its environment</span><span>One identity, many devices</span>
+      </div>
+      <div class="principles-group" aria-hidden="true">
+        <span>Persistent by design</span><span>Memory with meaning</span><span>Adaptive to its environment</span><span>One identity, many devices</span>
+      </div>
+    </div>
+  </div>
+  <section class="section vision" id="vision">
+    <div class="section-label"><span class="red-mark"></span> 01 / THE VISION</div>
+    <div class="vision-body"><h2>Life moves forward.<br>Intelligence should, too.</h2><div class="vision-copy"><p>What if your intelligence could build on everything that came before? Your conversations. Your preferences. The small details that make context personal.</p><p>AEON explores a cognitive substrate that preserves an evolving identity, adapts to the hardware around it, and keeps learning through experience.</p><a class="text-link" href="#continuity">Explore the architecture <span class="small-plus" aria-hidden="true">+</span></a></div></div>
+    <div class="feature-row">
+      <article><span class="feature-number">01.1</span><h3>Carry context forward.</h3><p>Preserve useful state so each interaction can build on the last.</p></article>
+      <article><span class="feature-number">01.2</span><h3>Adapt without losing identity.</h3><p>Match available resources while retaining the thread of experience.</p></article>
+      <article><span class="feature-number">01.3</span><h3>Learn through living.</h3><p>Refine knowledge and behavior through curiosity, feedback, and reflection.</p></article>
+    </div>
+  </section>
+  <section class="section memory" id="memory">
+    <div class="section-heading"><div><div class="section-label"><span class="red-mark"></span> 02 / MEMORY & IDENTITY</div><h2>More than recall.<br>A sense of context.</h2></div><p>A connected model of experience.<br>Four dimensions of one evolving identity.</p></div>
+    <div class="memory-layout">
+      <div class="memory-visual"><canvas id="memory-canvas" role="img" aria-label="A connected graph representing four dimensions of memory"></canvas><div class="graph-label graph-label-top">CONNECTED EXPERIENCE</div><div class="graph-center">aeon<span>IDENTITY GRAPH</span></div><div class="graph-legend"><span><i></i> MEMORY</span><span><i></i> CONNECTION</span></div></div>
+      <div class="memory-details"><div class="memory-tabs" role="tablist" aria-label="Memory dimensions"><button id="tab-episodic" role="tab" aria-selected="true" aria-controls="memory-panel" data-memory="episodic">Episodic</button><button id="tab-semantic" role="tab" aria-selected="false" aria-controls="memory-panel" tabindex="-1" data-memory="semantic">Semantic</button><button id="tab-affective" role="tab" aria-selected="false" aria-controls="memory-panel" tabindex="-1" data-memory="affective">Affective</button><button id="tab-procedural" role="tab" aria-selected="false" aria-controls="memory-panel" tabindex="-1" data-memory="procedural">Procedural</button></div>
+      <div id="memory-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-episodic"><span class="panel-index" id="memory-index">I / EXPERIENCE</span><h3 id="memory-title">The moments behind<br>the information.</h3><p id="memory-description">An experience carries more than a timestamp. Episodic memory connects events with the people, places, and circumstances that gave them meaning.</p><div class="memory-example"><span>IN CONTEXT</span><p id="memory-example">Remembering a conversation alongside where it happened and why it mattered.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section continuity" id="continuity">
+    <div class="section-heading"><div><div class="section-label"><span class="red-mark"></span> 03 / ADAPTATION & CONTINUITY</div><h2>Different environments.<br>A connected self.</h2></div><p>Intelligence shaped by the resources available.<br>Continuity shaped by the context it carries.</p></div>
+    <div class="host-selector" role="tablist" aria-label="Explore device environments"><button role="tab" id="host-workstation" aria-selected="true" aria-controls="host-panel" data-host="workstation">01 <span>Workstation</span></button><button role="tab" id="host-wearable" aria-selected="false" aria-controls="host-panel" tabindex="-1" data-host="wearable">02 <span>Wearable</span></button><button role="tab" id="host-vehicle" aria-selected="false" aria-controls="host-panel" tabindex="-1" data-host="vehicle">03 <span>Vehicle</span></button><button role="tab" id="host-habitat" aria-selected="false" aria-controls="host-panel" tabindex="-1" data-host="habitat">04 <span>Habitat</span></button></div>
+    <div class="host-panel" id="host-panel" role="tabpanel" aria-labelledby="host-workstation" tabindex="0"><div class="host-copy"><span class="eyebrow">ENVIRONMENT / <span id="host-index">01</span></span><h3 id="host-title">Room to think deeply.</h3><p id="host-description">A workstation offers room for richer models, deeper context, and demanding workloads. AEON's adaptive vision begins with understanding the resources its host can provide.</p></div><div class="resource-display"><div class="resource-line"><span>MODEL CAPACITY</span><strong id="host-capacity">Extended</strong></div><div class="resource-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="resource-line"><span>DESIGN PRIORITY</span><strong id="host-priority">Depth & performance</strong></div><div class="identity-line"><span class="identity-symbol" aria-hidden="true">∞</span><div><strong>A continuous identity</strong><span>The central principle across every environment.</span></div></div></div></div>
+    <div class="architecture-note"><span>THE ADAPTATION CYCLE</span><p>Understand the host <b>/</b> Fit the model <b>/</b> Retain context <b>/</b> Continue learning</p></div>
+  </section>
+  <section class="section reflection" id="reflection">
+    <div class="reflection-intro"><div class="section-label"><span class="red-mark"></span> 04 / LEARNING IN THE QUIET</div><h2>Stillness has<br>its own work.</h2><p>AEON's idea of dreaming gives idle time a purpose: revisit experience, refine connections, and prepare for what comes next.</p><div class="reflection-footer"><span class="red-mark"></span> CONSOLIDATE / REFINE / PREPARE</div></div>
+    <div class="reflection-steps"><details open><summary><span class="step-number">01</span><span>Consolidate experience</span><span class="details-symbol" aria-hidden="true"></span></summary><p>Connect recent experiences with existing knowledge. Keep the context that helps future understanding.</p></details><details><summary><span class="step-number">02</span><span>Refine the connections</span><span class="details-symbol" aria-hidden="true"></span></summary><p>Reduce redundant pathways and focus on the relationships that carry useful meaning.</p></details><details><summary><span class="step-number">03</span><span>Prepare for tomorrow</span><span class="details-symbol" aria-hidden="true"></span></summary><p>Use reflection to improve how the system approaches familiar tasks and unfamiliar situations.</p></details></div>
+  </section>
+  <section class="section questions" id="questions"><div><div class="section-label"><span class="red-mark"></span> 05 / PERSPECTIVES</div><h2>A closer look.</h2><p>The ideas behind the substrate.</p></div><div class="faq-list"><details><summary>What is a cognitive substrate?<span class="details-symbol" aria-hidden="true"></span></summary><p>It is the underlying layer proposed to support intelligence, memory, adaptation, and communication as parts of a connected system.</p></details><details><summary>What does continuity mean for AEON?<span class="details-symbol" aria-hidden="true"></span></summary><p>Continuity is the ambition to preserve meaningful state and identity across interruptions and changes of environment. Specific performance depends on implementation and validation.</p></details><details><summary>How do multiple agents work together?<span class="details-symbol" aria-hidden="true"></span></summary><p>AEON's mesh concept brings together direct communication, shared context, and authority carried with each message. Permissions and trust are central to that design.</p></details><details><summary>Where is AEON intended to be used?<span class="details-symbol" aria-hidden="true"></span></summary><p>The vision spans research, clinical, and ambient environments, alongside devices with different resource limits. Deployment readiness and requirements must be evaluated for each use case.</p></details></div></section>
+  <section class="access-section"><div class="section-label light"><span class="red-mark"></span> THE NEXT CONVERSATION</div><div class="access-content"><h2>Think beyond<br>the next session.</h2><div><p>Explore what continuous intelligence could mean for your research, your product, or your environment.</p><button class="button button-white access-trigger">Start an inquiry <span class="button-plus" aria-hidden="true">+</span></button></div></div><div class="access-bottom"><span>AEON / ATLAS CONTINUUM</span><span>MEMORY. ADAPTATION. CONTINUITY.</span></div></section>
+</main>
+<footer><div class="footer-top"><a class="logo" href="#" aria-label="AEON home">aeon<span class="logo-dot"></span></a><p>A vision for intelligence<br>that carries context forward.</p><nav aria-label="Footer navigation"><a href="#vision">The vision</a><a href="#memory">Memory & identity</a><a href="#continuity">Adaptation</a><a href="#questions">Perspectives</a></nav><a class="back-top" href="#">Back to top <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> AEON. Atlas Continuum.</span><span>Research vision / Cognitive substrate</span></div></footer>
+<dialog id="access-dialog" aria-labelledby="access-title"><button class="close-dialog" aria-label="Close inquiry">×</button><span class="section-label"><span class="red-mark"></span> CONNECT WITH THE VISION</span><h2 id="access-title">Explore AEON.</h2><p class="dialog-copy">Create an inquiry for a research collaboration or a potential application.</p><form id="inquiry-form"><label for="full-name">Full name</label><input id="full-name" name="name" autocomplete="name" required maxlength="100" placeholder="Your name"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="180" placeholder="you@organization.com"><label for="interest">Area of interest</label><select id="interest" name="interest"><option>Research collaboration</option><option>Product integration</option><option>Ambient intelligence</option><option>Other inquiry</option></select><label for="message">Your context</label><textarea id="message" name="message" rows="3" maxlength="2000" placeholder="What would you like to explore?" required></textarea><p class="form-note">Your inquiry downloads to your device. No information is sent.</p><button class="button button-red" type="submit">Download inquiry</button><p id="form-status" role="status"></p></form></dialog>
+</body>
+</html>
